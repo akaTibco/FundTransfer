@@ -1,0 +1,26 @@
+Manifest-Version: 1.0.0.202006131551
+Bundle-SymbolicName: FundTransfer.module
+Bundle-ManifestVersion: 2
+TIBCO-BW-Edition: bwcf
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-Vendor: TIBCO Software Inc.
+TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
+Require-Capability: com.tibco.bw.model; filter:="(name=bwext)",com.tib
+ co.bw.palette; filter:="(name=bw.generalactivities)",com.tibco.bw.pal
+ ette; filter:="(name=bw.jdbc)",com.tibco.bw.palette; filter:="(name=b
+ w.restjson)",com.tibco.bw.palette; filter:="(name=bw.java)",com.tibco
+ .bw.palette; filter:="(name=bw.jms)",com.tibco.bw.palette; filter:="(
+ name=bw.xml)",com.tibco.bw.sharedresource.model; filter:="(name=bw.ht
+ tpclient)",com.tibco.bw.sharedresource.model; filter:="(name=bw.httpc
+ onnector)",com.tibco.bw.sharedresource.model; filter:="(name=bw.jdbc)
+ ",com.tibco.bw.sharedresource.model; filter:="(name=bw.jmsconnection)
+ ",com.tibco.bw.binding.model; filter:="(name=bw.rest)"
+TIBCO-BW-ConfigProfile: META-INF/default.substvar
+TIBCO-BW-Version: 2.5.3 V26 2020-05-15
+Export-Package: .
+Bundle-Name: FundTransfer Module
+Bundle-Version: 1.0.0.202006131551
+Bundle-ClassPath: .
+TIBCO-BW-ApplicationModule: META-INF/module.bwm
+TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+
