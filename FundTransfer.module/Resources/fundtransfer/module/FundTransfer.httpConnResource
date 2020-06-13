@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:httpconnector="http://xsd.tns.tibco.com/bw/models/sharedresource/httpconnector" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_u5HBYqsmEeq1X9g1fXvdRg" name="fundtransfer.module.FundTransfer" type="httpconnector:HttpConnectorConfiguration">
+  <jndi:configuration xsi:type="httpconnector:HttpConnectorConfiguration" xmi:id="_u5HBY6smEeq1X9g1fXvdRg">
+    <substitutionBindings xmi:id="_u5HBZKsmEeq1X9g1fXvdRg" template="host" propName="FundTransferHost"/>
+    <substitutionBindings xmi:id="_LQ5rcKspEeq1X9g1fXvdRg" template="port" propName="FundTransferPort"/>
+  </jndi:configuration>
+</jndi:namedResource>

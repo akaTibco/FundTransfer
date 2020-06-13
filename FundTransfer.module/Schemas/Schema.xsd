@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:tibex="http://www.tibco.com/bpel/2007/extensions" xmlns:tns="http://www.example.com/namespaces/tns/1591811543670" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.example.com/namespaces/tns/1591811543670">
+  <xsd:element name="Element">
+    <xsd:complexType>
+      <xsd:sequence>
+      	<xsd:element maxOccurs="1" minOccurs="1" name="uuid"
+      		type="xsd:string" />
+      	<xsd:element maxOccurs="1" minOccurs="1" name="TxnAmt"
+      		type="xsd:integer" />
+      	<xsd:element name="DateTime" type="xsd:dateTime" />
+      	<xsd:element minOccurs="0" name="balance" type="xsd:integer" />
+      	<xsd:element minOccurs="0" name="Status" type="xsd:string"
+      		maxOccurs="1" />
+      	<xsd:element name="Message" type="xsd:string" minOccurs="0"
+      		maxOccurs="1">
+      	</xsd:element>
+      	<xsd:element name="xmlMsg" type="xsd:string" minOccurs="0" maxOccurs="1"></xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>

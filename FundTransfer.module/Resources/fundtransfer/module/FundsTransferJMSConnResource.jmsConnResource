@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jms="http://xsd.tns.tibco.com/bw/models/sharedresource/jms" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmi:id="_sKEuIaxsEeqGeMIRm0otwA" name="fundtransfer.module.FundsTransferJMSConnResource" type="jms:JMSConnectionFactory">
+  <jndi:configuration xsi:type="jms:DirectConnectionFactory" xmi:id="_tbMXwKxsEeqGeMIRm0otwA" factoryType="Queue/Topic">
+    <substitutionBindings xmi:id="_xOBwMKxsEeqGeMIRm0otwA" template="providerURL" propName="Jms_conn_url"/>
+  </jndi:configuration>
+</jndi:namedResource>

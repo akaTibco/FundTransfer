@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_7EQagKskEeq1X9g1fXvdRg" targetNamespace="http://tns.tibco.com/bw/composite/FundTransfer.module" name="FundTransfer.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_5y07gKurEeqcY-SfmgOzUg" name="ft_service" promote="ComponentFundTransfer/ft_service">
+    <sca:interface.wsdl xmi:id="_5y07hKurEeqcY-SfmgOzUg" interface="http://xmlns.example.com/20200611022118PLT#wsdl.interface(ft_service)" scaext:wsdlLocation="../Processes/fundtransfer/module/FundTransfer.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_5y2JoKurEeqcY-SfmgOzUg" name="RestService" path="/ft_service" docBasePath="http://localhost:7777/FundTransfer.module" docResourcePath="FT_Service" basePath="/" connector="fundtransfer.module.FundTransfer" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/fundtransfer.module.FundTransfer-FT_Service.json">
+      <operation xmi:id="_5y2wsKurEeqcY-SfmgOzUg" operationName="post" nickname="post-ft_service" httpMethod="POST" notes="postFT_Service" responseStyle="element" requestStyle="element" outputPartName="ft_res">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_5y3XwKurEeqcY-SfmgOzUg"/>
+      <advancedConfig xmi:id="_5y2JoaurEeqcY-SfmgOzUg" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_5y2wsaurEeqcY-SfmgOzUg" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_7KnhMKskEeq1X9g1fXvdRg" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7Kp9cKskEeq1X9g1fXvdRg" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7KryoKskEeq1X9g1fXvdRg" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7KtAwKskEeq1X9g1fXvdRg" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7KuO4KskEeq1X9g1fXvdRg" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_7KwEEKskEeq1X9g1fXvdRg" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_7KzucKskEeq1X9g1fXvdRg" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_05m5UKsoEeq1X9g1fXvdRg" name="FundTransferHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_3pLd8KsoEeq1X9g1fXvdRg" name="FundTransferPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_7afycKszEeq1X9g1fXvdRg" name="CreditHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_-hQIAKszEeq1X9g1fXvdRg" name="CreditPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_PHjL4Ks0Eeq1X9g1fXvdRg" name="DebitHost" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_RDR4wKs0Eeq1X9g1fXvdRg" name="DebitPort" type="XMLSchema:int" scaext:simpleValue="0" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_jh96MKv7EeqGeMIRm0otwA" name="Jms_conn_url" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_tixQwKv7EeqGeMIRm0otwA" name="db_conn_url" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_pCZAYKv8EeqGeMIRm0otwA" name="jms_queue_name" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_ws2OcKurEeqcY-SfmgOzUg" name="ComponentFundTransfer" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_ws2OcaurEeqcY-SfmgOzUg" processName="fundtransfer.module.FundTransfer"/>
+    <sca:service xmi:id="_5y0UcKurEeqcY-SfmgOzUg" name="ft_service">
+      <sca:interface.wsdl xmi:id="_5y0UcaurEeqcY-SfmgOzUg" interface="http://xmlns.example.com/20200611022118PLT#wsdl.interface(ft_service)"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_HbMAQKv8EeqGeMIRm0otwA" name="Componentreplay_failTxn" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_HbMAQav8EeqGeMIRm0otwA" processName="fundtransfer.module.replay_failTxn"/>
+  </sca:component>
+</sca:composite>
