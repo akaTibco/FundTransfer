@@ -66,12 +66,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//FundTransfer.module//FundTransferPort</name>
-			<value>4777</value>
+			<value>5777</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>5777</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//FundTransfer.module//FundTransferHost</name>
