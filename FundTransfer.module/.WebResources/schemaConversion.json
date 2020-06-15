@@ -8,5 +8,15 @@
         "jsonSchemaLocation": "/FundTransfer.module/Service Descriptors/fundtransfer.module.FundTransfer-FT_Service.json",
         "conversionType": "linked",
         "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1591798868425"
+    },
+    {
+        "jsonSchemaLocation": "/FundTransfer.module/Service Descriptors/fundtransfer.module.FunTransferProcess-bochkfundtransferService.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1591798696471"
+    },
+    {
+        "jsonSchemaLocation": "/FundTransfer.module/Service Descriptors/fundtransfer.module.FunTransferProcess-bochkfundtransferService.json",
+        "conversionType": "linked",
+        "xsdSchemaTargetNamespace": "http://www.example.com/namespaces/tns/1591798868425"
     }
 ]}

@@ -1,7 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: FundTransfer Module
-Bundle-SymbolicName: FundTransfer.module
 Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: TIBCO Software Inc.
@@ -25,3 +24,4 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 TIBCO-BW-ConfigProfile: META-INF/default.substvar
 TIBCO-BW-ModuleSharedVariables: META-INF/module.msv
 TIBCO-BW-JobSharedVariables: META-INF/module.jsv
+Bundle-SymbolicName: FundTransfer.module

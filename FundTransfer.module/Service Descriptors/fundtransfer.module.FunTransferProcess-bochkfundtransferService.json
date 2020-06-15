@@ -1,0 +1,62 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "bochkfundtransferService",
+    "description" : "bochkfundtransferService service"
+  },
+  "host" : "localhost:8080",
+  "basePath" : "/",
+  "schemes" : [ "http" ],
+  "paths" : {
+    "/bochkfundtransferservice" : {
+      "post" : {
+        "summary" : "postBochkfundtransferService",
+        "description" : "postBochkfundtransferService",
+        "operationId" : "post-bochkfundtransferservice",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "description" : "",
+          "schema" : {
+            "$ref" : "#/definitions/Element"
+          },
+          "required" : true
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "a Element to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/Element"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Element" : {
+      "type" : "object",
+      "required" : [ "MobileNo", "ToAccount", "FromAccount", "Amount", "Currency" ],
+      "properties" : {
+        "MobileNo" : {
+          "type" : "integer"
+        },
+        "FromAccount" : {
+          "type" : "integer"
+        },
+        "ToAccount" : {
+          "type" : "integer"
+        },
+        "Amount" : {
+          "type" : "integer"
+        },
+        "Currency" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}

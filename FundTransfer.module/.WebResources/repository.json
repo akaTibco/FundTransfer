@@ -4,8 +4,18 @@
         "items": [],
         "url": "https://integration.cloud.tibco.com:443"
     }],
-    "resources": [{
-        "location": "Service Descriptors/fundtransfer.module.FundTransfer-FT_Service.json",
-        "type": "generated"
-    }]
+    "resources": [
+        {
+            "location": "Service Descriptors/fundtransfer.module.FundTransfer-FT_Service.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/fundtransfer.module.FunTransferProcess-bochkfundtransferService.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/fundtransfer.module.CopyOfFunTransferProcess-bochkfundtransferService.json",
+            "type": "generated"
+        }
+    ]
 }

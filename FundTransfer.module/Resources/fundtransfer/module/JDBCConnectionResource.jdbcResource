@@ -2,6 +2,8 @@
 <jndi:namedResource xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://xsd.tns.tibco.com/amf/models/sharedresource/jdbc" xmlns:jndi="http://xsd.tns.tibco.com/amf/models/sharedresource/jndi" xmlns:subject="http://xsd.tns.tibco.com/trinity/models/identity/subject" xmi:id="_m96C8au2EeqcY-SfmgOzUg" name="fundtransfer.module.JDBCConnectionResource" type="jdbc:JdbcDataSource">
   <jndi:reference xmi:id="_m-FpIKu2EeqcY-SfmgOzUg" key="subjectJndiName" type="subject:SubjectConfiguration" value=""/>
   <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_m-FpIau2EeqcY-SfmgOzUg" username="postgres" password="#!HC25NwV5J9kVDi2FRVEGxRzJ258x1oF6Mia3QknS7Q0aHw2lTLTdD41RJbsWNFtC">
-    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_m-HeUKu2EeqcY-SfmgOzUg" jdbcDriver="org.postgresql.Driver" dbURL="jdbc:postgresql://13.233.89.138:5432/postgres"/>
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_m-HeUKu2EeqcY-SfmgOzUg" jdbcDriver="org.postgresql.Driver">
+      <substitutionBindings xmi:id="_MKDdsK8eEeqMkvrFmTmxPg" template="dbURL" propName="db_conn_url"/>
+    </connectionConfig>
   </jndi:configuration>
 </jndi:namedResource>

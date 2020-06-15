@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<emulation:EmulationData xmlns:emulation="http:///emulation.ecore" isBW="true" location="/FundTransfer.module/Tests/FundTransfer.module1.bwt">
+  <ProcessNode Id="fundtransfer.module.CallCreditTransfer" Name="fundtransfer.module.CallCreditTransfer" ModelType="BW" moduleName="FundTransfer.module"/>
+</emulation:EmulationData>

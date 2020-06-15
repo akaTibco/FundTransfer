@@ -120,7 +120,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>Jms_conn_url</name>
-			<value>tcp://localhost:7222</value>
+			<value>tcp://15.206.167.74:7222</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
@@ -129,7 +129,7 @@
 		</globalVariable>
 		<globalVariable>
 			<name>db_conn_url</name>
-			<value>jdbc:postgresql://13.233.89.138:5432/postgres</value>
+			<value>jdbc:postgresql://35.154.189.40:5432/postgres</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
