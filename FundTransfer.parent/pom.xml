@@ -8,13 +8,21 @@
   <packaging>pom</packaging>
   <modules>
     <module>../FundTransfer.module</module>
-    <module>../BankOfChinaHK_POC</module>
+    <module>../FundTransfer.application</module>
   </modules>
   <build>
     <plugins>
       <plugin>
         <artifactId>maven-site-plugin</artifactId>
         <version>3.7.1</version>
+      </plugin>
+      <plugin>
+        <groupId>io.fabric8</groupId>
+        <artifactId>docker-maven-plugin</artifactId>
+        <version>0.26.1</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
       </plugin>
     </plugins>
   </build>
