@@ -86,12 +86,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//FundTransfer.module//CreditPort</name>
-			<value>4778</value>
+			<value>5778</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>5778</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//FundTransfer.module//CreditHost</name>
@@ -115,12 +116,13 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//FundTransfer.module//DebitPort</name>
-			<value>4779</value>
+			<value>5779</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Integer</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 			<useLookupValue>false</useLookupValue>
+			<lookupValue>5779</lookupValue>
 		</globalVariable>
 		<globalVariable>
 			<name>//FundTransfer.module//db_conn_url</name>
