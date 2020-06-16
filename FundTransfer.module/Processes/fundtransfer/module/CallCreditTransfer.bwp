@@ -1184,8 +1184,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.2/@activity/@activities.7"/>
 
                                     <layoutConstraint
-                                    x="164"
-                                    xsi:type="notation:Bounds" y="110"/>
+                                    x="153"
+                                    xsi:type="notation:Bounds" y="43"/>
                                     </children>
                                     <styles xsi:type="notation:DrawerStyle"/>
                                     <styles xsi:type="notation:SortingStyle"/>
@@ -1203,8 +1203,8 @@
                                     <element href="//0/@process/@activity/@activity/@activities.2/@activity"/>
 
                                     <layoutConstraint
-                                    height="236"
-                                    width="848" xsi:type="notation:Bounds"/>
+                                    height="228"
+                                    width="955" xsi:type="notation:Bounds"/>
                                     </children>
                                     <styles xsi:type="notation:SortingStyle"/>
                                     <styles xsi:type="notation:FilteringStyle"/>
