@@ -10,15 +10,17 @@
   </parent>
   <artifactId>FundTransfer</artifactId>
   <packaging>bwear</packaging>
+    <!-- 
   <properties>
     <skipTests>false</skipTests>
-    <!-- <docker.env.property.file>/home/tibco/git/FundTransfer/FundTransfer.application/docker-host-env-dev.properties</docker.env.property.file> -->
+    <docker.env.property.file>/home/tibco/git/FundTransfer/FundTransfer.application/docker-host-env-dev.properties</docker.env.property.file> 
     <project.type>Docker</project.type>
     <bw.Home>/bwce/2.5</bw.Home>
     <docker.property.file>docker-dev.properties</docker.property.file>
     <failIfNoTests>false</failIfNoTests>
     <tibco.Home>/opt/tibco/bwce253</tibco.Home>
   </properties>
+-->
   <build>
     <plugins>
       <plugin>
